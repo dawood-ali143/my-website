@@ -1,10 +1,115 @@
-<!doctypehtml>
-<html>
-  <head>
-    <title>my first git page
-    </title>
-   </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shaik Dawood Ali — Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Shaik Dawood Ali - Resume / Portfolio. Frontend single-page resume.">
+</head>
 <body>
-  <p>this my first page</p>
+  <header class="top">
+    <div class="container header-inner">
+      <div class="profile">
+        <h1 id="name">Shaik Dawood Ali</h1>
+        <p class="role">Aspiring Software Engineer — Frontend & DSA</p>
+        <div class="contact">
+          <a href="mailto:shaikdawoodali17@gmail.com">shaikdawoodali17@gmail.com</a> ·
+          <a href="tel:+918328614053">(+91) 8328614053</a> ·
+          <a href="https://github.com/dawood-ali143" target="_blank">@dawood-ali143</a>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="Resume.pdf" download>Download PDF</a>
+        <a class="btn ghost" id="contactBtn">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="card objective">
+      <h2>Career Objective</h2>
+      <p>
+        Aspiring software engineer with good knowledge in data structures and algorithms and front-end development.
+        Seeking a position to apply and improve my skills in software development and front-end engineering.
+      </p>
+    </section>
+
+    <section class="card highlights">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Strong fundamentals in Data Structures & Algorithms (DSA) — practicing on LeetCode with Java.</li>
+        <li>Front-end: HTML, CSS, JavaScript, Bootstrap; started full-stack roadmap July 2025.</li>
+        <li>Active GitHub portfolio — projects, e‑commerce site, and mini-projects.</li>
+      </ul>
+    </section>
+
+    <section class="card experience">
+      <h2>Projects (Resume → Project)</h2>
+      <p><strong>Resume Website (this project)</strong> — <em>Single-page responsive resume</em>. Built with HTML, CSS, and a tiny JS for interactivity. Hosted on GitHub Pages. Purpose: include this project as a portfolio item on my CV/Resume.</p>
+      <ul>
+        <li><strong>Repo:</strong> <code>dawood-resume-site</code></li>
+        <li><strong>Technologies:</strong> HTML, CSS, JavaScript, GitHub Pages</li>
+        <li><strong>Role:</strong> Sole developer — designed layout, responsive styles, and kept content identical to my PDF resume.</li>
+      </ul>
+    </section>
+
+    <section class="card education">
+      <h2>Education</h2>
+      <div class="ed-item">
+        <h3>B.Tech — Computer Science & Engineering</h3>
+        <p>Kallam Harnada Reddy Institute of Technology (KHIT), Dasaripalem — 2023–Present</p>
+        <p><strong>CGPA:</strong> 7.95 (as of 3rd Year, 1st sem)</p>
+      </div>
+      <div class="ed-item">
+        <h3>Intermediate</h3>
+        <p>Bhashyam Junior College — 889 marks (2 years)</p>
+      </div>
+    </section>
+
+    <section class="card skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+        <span>DSA (Java)</span><span>Git & GitHub</span><span>React (learning)</span>
+      </div>
+    </section>
+
+    <section class="card achievements">
+      <h2>Achievements & Activities</h2>
+      <ul>
+        <li>Built an e-commerce mini-project showcasing product pages, cart, and responsive UI.</li>
+        <li>Trained in badminton and provided coaching for ~1.5 years (coaching & fitness).</li>
+        <li>Active participant in coding contests and campus projects.</li>
+      </ul>
+    </section>
+
+    <section class="card contact" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:shaikdawoodali17@gmail.com">shaikdawoodali17@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918328614053">(+91) 8328614053</a></p>
+      <p>GitHub: <a href="https://github.com/dawood-ali143" target="_blank">github.com/dawood-ali143</a></p>
+      <form id="contactForm" class="contact-form" onsubmit="return sendMessage(event)">
+        <label>
+          Your Name
+          <input name="name" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send (local)</button>
+        <p class="note">This form only shows a local confirmation (no backend). Use GitHub link above to contact me.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Made by <strong>Shaik Dawood Ali</strong>. View source on <a href="https://github.com/dawood-ali143" target="_blank">GitHub</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
